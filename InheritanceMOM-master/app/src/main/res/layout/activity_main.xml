@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/logback"
+    tools:context="com.example.priyanshi.projectmom.MainActivity">
+
+    <Button
+        android:text="Log In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logpass"
+        android:background="@drawable/buttonlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/login" />
+
+    <TextView
+        android:text="Forgot Password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpass"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Create New Account"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logcreate"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonlogin"
+        android:layout_below="@+id/forgotpass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/logpass"
+        android:hint="Enter Password"
+        android:drawableLeft="@drawable/passicon3"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/loguser"
+        android:layout_alignLeft="@+id/loguser"
+        android:layout_alignStart="@+id/loguser"
+
+        android:layout_alignRight="@+id/loguser"
+        android:layout_alignEnd="@+id/loguser" />
+
+    <TextView
+        android:text="Money Oriented Management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:layout_marginTop="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/loguser"
+        android:layout_alignStart="@+id/loguser" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mom"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/imageView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/loguser"
+        android:hint="Enter Email Id"
+        android:drawableLeft="@drawable/username4"
+        android:paddingLeft="7dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
